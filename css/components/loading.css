@@ -1,0 +1,6 @@
+.loading {
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  min-height: 320px;
+}

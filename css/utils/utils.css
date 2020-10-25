@@ -1,0 +1,17 @@
+.display-none {
+  display: none !important;
+}
+
+.base-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 -2px 22px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  padding: 33px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  max-width: 600px;
+}

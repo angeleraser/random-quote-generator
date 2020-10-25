@@ -1,0 +1,77 @@
+.quote-box {
+  min-height: 220px;
+}
+
+.quote-box .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.quote-box .content .q-body {
+  display: flex;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.quote-box .content .q-body p {
+  text-align: left;
+  margin-left: 14px;
+  font-style: italic;
+}
+
+.quote-box .content .q-body,
+.quote-box .content .q-author,
+.quote-box .content .buttons-wrapper {
+  grid-column: span 2;
+  transition: all 1s;
+}
+
+.quote-box .content .q-author {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.quote-box .content .q-author::before {
+  content: "- ";
+}
+
+.quote-box .content .buttons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.quote-box .content button,
+.quote-box .content a {
+  border: none;
+  padding: 14px 17px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: currentColor;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.quote-box .content button:focus {
+  outline: none;
+}
+
+.quote-box .content a {
+  display: inline-block;
+  box-shadow: none;
+  color: currentColor;
+  margin: 0 auto 0 0;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+}
+.quote-box i {
+  margin-right: 6px;
+}
